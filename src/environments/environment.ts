@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyAjUfGzVjTeBR7ZBcuANakQhG2h_vvgILo",
+    authDomain: "poop-advisor-v2.firebaseapp.com",
+    databaseURL: "https://poop-advisor-v2.firebaseio.com",
+    projectId: "poop-advisor-v2",
+    storageBucket: "poop-advisor-v2.appspot.com",
+    messagingSenderId: "637314163320",
+    appId: "1:637314163320:web:cf0aa421ec84030960038d",
+    measurementId: "G-76N77G515Q"
+  }
 };
 
 /*

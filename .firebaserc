@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "poop-advisor-v2": {
+      "hosting": {
+        "Poop-Advisor-V2": [
+          "poop-advisor-v2"
+        ]
+      }
+    }
+  }
+}
