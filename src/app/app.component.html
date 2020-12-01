@@ -1,11 +1,30 @@
-<h1>Poop Advisor</h1>
-<div *ngIf="auth.user; else login">
-  <h2>Welcome, {{auth.user.displayName}}</h2>
-  <img src="{{ auth.user.photoURL }}">
-  <hr>
-  <button mat-raised-button color="primary" (click) = "auth.googleSignOut()"> Sign Out</button>
-</div>
-<ng-template #login>
-  <button mat-raised-button color="primary" (click) = "auth.googleSignIn()"> Sign In With Google</button>
-</ng-template>
+<mat-grid-list cols="1" rowHeight="80%">
+  <mat-grid-tile>
+    <mat-card class="example-card" style="text-align: center;">
+      <div *ngIf="auth.user; else login">
+        <mat-card-content>
+          <h2>Welcome, {{auth.user.displayName}}</h2>
+      <img src="{{ auth.user.photoURL }}">
+      <hr>
+      <button mat-raised-button color="primary" (click) = "auth.googleSignOut()"> Sign Out</button>
+        </mat-card-content>
+      </div>
+      <ng-template #login>
+        <mat-card-header>
+          <mat-card-title>🚽 Poop Advisor 💩</mat-card-title>
+          <mat-card-subtitle>The best place to rate and review public toilets. Allowing you to get the best public bathroom experiences when you're on the go, in a new place or during an emergency.</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-actions>
+          <button mat-stroked-button (click) = "auth.googleSignIn()"> 
+            <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+            Sign In With Google
+          </button>
+        </mat-card-actions>
+      </ng-template>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<!-- Router -->>
 <router-outlet></router-outlet>
+

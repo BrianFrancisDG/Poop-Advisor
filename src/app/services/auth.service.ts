@@ -89,7 +89,7 @@ export class AuthService {
 
   async googleSignOut(){
     await this.afAuth.signOut();
-    return this.router.navigate(['/']);
+    return this.router.navigate(['']);
 
     // await firebase.auth().signOut().then(function() {
     //   // Sign-out successful.

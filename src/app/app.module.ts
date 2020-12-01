@@ -16,6 +16,8 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 // Material Imports
 import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { MatButtonModule } from '@angular/material/button';
     AngularFirestoreModule,
     AngularFireAuthModule,
     MatSliderModule,
-    MatButtonModule
+    MatButtonModule,
+    MatGridListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
